@@ -6,7 +6,7 @@ request.get({
   var list = JSON.parse(body)
   for (var i=0;i<list.length;i++) {
     if (target === list[i].name.toLowerCase()) {
-      console.log(list[i].rgb.r + " " + list[i].rgb.g + " " + list[i].rgb.b)
+      console.log(list[i].name + " " + list[i].rgb.r + " " + list[i].rgb.g + " " + list[i].rgb.b)
     }
   }
 })
